@@ -23,11 +23,11 @@
 .screen-copy h2 { color: #fff; }
 .screen-copy p { color: rgba(255,255,255,.84); }
 .phone { display: none; }
-.hero-visual::after { background: url('/images.jpg') center / cover no-repeat; border: 6px solid #081b28; border-radius: 25px; bottom: 4px; box-shadow: 0 14px 28px rgba(12,36,46,.32); content: ''; height: 270px; position: absolute; right: 0; width: 150px; z-index: 2; }
-.hero-visual::before { background: #fff url('/sharaly-logo.png') center / 92px auto no-repeat; border-radius: 0 0 5px 5px; content: ''; height: 52px; position: absolute; right: 6px; top: 91px; width: 138px; z-index: 3; }
+.hero-visual::after { background: #000 url('/WhatsApp%20Image%202026-09-23%20at%2010.06.29.jpeg') center / 100% 100% no-repeat; border: 6px solid #081b28; border-radius: 25px; bottom: 4px; box-shadow: 0 14px 28px rgba(12,36,46,.32); content: ''; height: 270px; position: absolute; right: 0; width: 150px; z-index: 2; }
+.hero-visual::before { display: none; }
 .laptop-base { height: 12px; }
 .laptop-base::before { display: none; }
-@media (max-width: 480px) { .laptop-base { height: 12px; } .laptop-base::after { top: 2px; } .hero-visual::after { border-width: 4px; border-radius: 18px; bottom: 2px; height: 190px; right: 0; width: 102px; } .hero-visual::before { background-size: 58px auto; height: 36px; right: 3px; top: 83px; width: 94px; } }
+@media (max-width: 480px) { .laptop-base { height: 12px; } .laptop-base::after { top: 2px; } .hero-visual::after { border-width: 4px; border-radius: 18px; bottom: 2px; height: 190px; right: 0; width: 102px; } }
 .site-header { border-bottom: 1px solid #e1e7eb; }
 .footer-nav { border-top: 1px solid rgba(255,255,255,.22); padding-top: 13px; }
 .laptop { left: 0; top: 25px; transform: none; width: 78%; }
@@ -95,3 +95,62 @@
 .laptop-base::before { background: repeating-linear-gradient(90deg, rgba(48,58,62,.62) 0 5px, transparent 5px 7px), repeating-linear-gradient(0deg, rgba(48,58,62,.58) 0 3px, transparent 3px 5px); border-radius: 2px; content: ''; height: 13px; left: 17%; position: absolute; top: 3px; width: 66%; }
 .laptop-base::after { background: linear-gradient(#cbd0d1, #a8b0b2); border: 1px solid rgba(76,86,90,.35); border-radius: 2px 2px 5px 5px; height: 9px; left: 42%; top: 17px; width: 16%; }
 @media (max-width: 480px) { .laptop-base { height: 20px; } .laptop-base::before { height: 9px; top: 2px; } .laptop-base::after { height: 6px; top: 12px; } }
+.qr-code { background: #fff url('https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https%3A%2F%2Fsharaly.com%2Fmenu') center / contain no-repeat; color: transparent; display: block; font-size: 0; height: 80px; width: 80px; }
+.feature-icon { height: 42px; width: 42px; }
+.feature-icon svg { height: 21px; stroke-width: 2.2; width: 21px; }
+.hero-points span { display: inline-block; padding-left: 18px; position: relative; }
+.hero-points span::first-letter { color: transparent; }
+.hero-points span::before { background-position: center; background-repeat: no-repeat; background-size: contain; content: ''; height: 13px; left: 0; position: absolute; top: 0; width: 13px; }
+.hero-points span:nth-child(1)::before { background-image: url('https://unpkg.com/lucide-static@latest/icons/shopping-bag.svg'); }
+.hero-points span:nth-child(2)::before { background-image: url('https://unpkg.com/lucide-static@latest/icons/qr-code.svg'); }
+.hero-points span:nth-child(3)::before { background-image: url('https://unpkg.com/lucide-static@latest/icons/truck.svg'); }
+.hero-points span:nth-child(4)::before { background-image: url('https://unpkg.com/lucide-static@latest/icons/sparkles.svg'); }
+.window-bar b, .mini-site-top b, .mobile-preview > b { background: url('/sharaly-logo.png') center / contain no-repeat; display: block; font-size: 0; height: 20px; width: 78px; }
+.mobile-item:nth-of-type(2) i { background: url('https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=160&q=80') center / cover; }
+.mobile-item:nth-of-type(3) i { background: url('/food-landscape.jpg') center / cover; }
+.dashboard-card .product-window { height: 230px; }
+.dashboard-card .window-bar { font-size: 9px; padding: 12px 16px; }
+.dashboard-card .dash-content { padding: 22px 20px; }
+.dashboard-card .dash-content > small { font-size: 8px; }
+.dashboard-card .dash-content h3 { font-size: 21px; margin: 8px 0 15px; }
+.dashboard-card .dash-stats { gap: 42px; }
+.dashboard-card .dash-stats b { font-size: 21px; }
+.dashboard-card .dash-stats small { font-size: 9px; }
+.dashboard-card .chart { gap: 10px; height: 70px; margin-top: 18px; }
+@media (max-width: 480px) { .dashboard-card .product-window { height: 190px; } .dashboard-card .dash-content { padding: 15px 12px; } .dashboard-card .dash-content h3 { font-size: 17px; } .dashboard-card .dash-stats b { font-size: 17px; } .dashboard-card .chart { height: 48px; } }
+.faq-section { background: #fffaf4; display: grid; gap: 8%; grid-template-columns: .8fr 1.2fr; padding: 70px 8%; }
+.faq-intro h2 { color: var(--navy); font-size: 37px; line-height: 1; margin: 0 0 12px; }
+.faq-intro > p:not(.eyebrow) { color: var(--muted); font-size: 12px; line-height: 1.5; max-width: 270px; }
+.faq-button { border-color: #b6c6d0; color: var(--navy); margin-top: 12px; }
+.faq-list { border-top: 1px solid #e2dcd4; }
+.faq-item { border-bottom: 1px solid #e2dcd4; }
+.faq-item button { align-items: center; background: transparent; color: var(--navy); display: flex; font-size: 13px; font-weight: 700; justify-content: space-between; padding: 19px 0; text-align: left; width: 100%; }
+.faq-item button b { align-items: center; border: 1px solid var(--orange); border-radius: 50%; color: var(--orange); display: flex; flex: 0 0 22px; font-size: 18px; height: 22px; justify-content: center; margin-left: 15px; width: 22px; }
+.faq-item p { color: var(--muted); font-size: 11px; line-height: 1.6; margin: -4px 35px 18px 0; }
+@media (max-width: 800px) { .faq-section { gap: 30px; grid-template-columns: 1fr; padding: 54px 7%; } .faq-intro h2 { font-size: 30px; } }
+.switch-grid { align-items: stretch; gap: 46px; margin-top: 30px; }
+.service-card { border: 1px solid transparent; box-shadow: 0 12px 28px rgba(22, 59, 86, .08); min-height: 156px; padding: 24px 40px; position: relative; }
+.service-card.ending { border-color: #e4e7e9; }
+.service-card.starting { border-color: #ffe3c8; }
+.service-card::after { border-radius: 12px; content: ''; height: 5px; left: 40px; position: absolute; right: 40px; top: 0; }
+.service-card.ending::after { background: #b4bdc4; }
+.service-card.starting::after { background: var(--orange); }
+.service-logo:not(.gray) { background: url('/sharaly-logo.png') left center / contain no-repeat; font-size: 0; height: 37px; width: 165px; }
+.service-logo:not(.gray) i { display: none; }
+.service-card ul { line-height: 2; margin-top: 10px; }
+.switch-arrow { align-self: center; border-radius: 10px; box-shadow: 0 10px 20px rgba(255, 100, 48, .24); min-width: 125px; padding: 18px 10px; }
+.switch-arrow span { font-size: 38px; margin-top: 12px; }
+.contact-modal form { margin-top: 18px; }
+.contact-modal input, .contact-modal textarea { border: 1px solid #dce3e7; border-radius: 4px; display: block; margin: 8px 0; padding: 12px; resize: vertical; width: 100%; }
+.contact-modal .orange-button { margin-top: 8px; }
+.demo-booking-modal { max-width: 560px; }
+.demo-booking-modal form { margin-top: 18px; }
+.demo-booking-modal input, .demo-booking-modal select, .demo-booking-modal textarea { background: #fff; border: 1px solid #dce3e7; border-radius: 4px; color: var(--text); display: block; margin: 8px 0; padding: 12px; width: 100%; }
+.demo-booking-modal textarea { resize: vertical; }
+.demo-booking-modal input:focus, .demo-booking-modal select:focus, .demo-booking-modal textarea:focus { border-color: var(--orange); outline: 2px solid rgba(255, 100, 48, .14); }
+.form-row { display: grid; gap: 10px; grid-template-columns: 1fr 1fr; }
+.demo-booking-modal .orange-button { margin-top: 8px; }
+.contact-details { display: flex; flex-wrap: wrap; gap: 8px 20px; margin: 14px 0 10px; }
+.contact-details a, .contact-details span { color: #d7e2ea; font-size: 11px; }
+.contact-details a:hover { color: #fff; text-decoration: underline; }
+@media (max-width: 480px) { .switch-grid { gap: 18px; } .service-card { padding: 22px 25px; } .service-card::after { left: 25px; right: 25px; } .switch-arrow { min-width: 140px; } .form-row { grid-template-columns: 1fr; gap: 0; } .demo-booking-modal { padding: 28px 20px; } }
